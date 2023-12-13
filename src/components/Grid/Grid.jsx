@@ -49,7 +49,7 @@ function reset()
 
       <div className="grid">
         {board.map((el, idx) => (
-          <Card key={idx} onPlay={play} player={el} index={idx} />
+          <Card gameEnd={winner?true:false} key={idx} onPlay={play} player={el} index={idx} />
         ))}
       </div>
     </div>
